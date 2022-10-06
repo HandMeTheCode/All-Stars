@@ -1,0 +1,39 @@
+body {
+  border: 1px solid black;
+  padding: 1em;
+  margin-top: 10px;
+  margin-right: 1em;
+  margin-bottom: 10px;
+  margin-left: 1em;
+}
+
+.contenido{
+    max-width: 500px;
+    margin: auto;
+}
+
+h1{
+    border-bottom: 1px solid #375e97;
+    width:100%;
+    height: 40px;
+    color: #375e97;
+    font-family: Georgia;
+}
+.WB{
+    color:#999999;
+    font-weight: bold;
+}
+.CI{
+    color: black;
+    font-size: 20;
+    font-weight: bold;
+}
+.STORY_INF{
+    color: black;
+}
+.CONTACT_INFO{
+    color: black;
+}
+.DIRECCION{
+    color: #fb6542;
+}

@@ -1,0 +1,29 @@
+body {
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-right: 1em;
+    margin-bottom: 10px;
+    margin-left: 1em;
+    padding: 1em;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    FLEX-WRAP: nowrap;
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:flex-end
+}
+p{
+    display: flex;
+    FLEX-DIRECTION: COLUMN;
+    ALIGN-ITEMS:  center;
+}

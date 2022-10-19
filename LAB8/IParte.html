@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Laboratorio #8 - Introducción a Javascript - Contador</title>
+<style>
+    body {
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-right: 1em;
+    margin-bottom: 10px;
+    margin-left: 1em;
+    padding: 1em;
+    }
+    .a{
+        font-family: 'times new roman';
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        height: 50px;
+        
+    }
+    .first {
+        color: white;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+    }
+    .second {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        FLEX-WRAP: nowrap;
+        color: white;
+    }
+    .third {
+        color: var(str1, black);
+    }
+    span.c {
+        display: block;
+        margin-top: 10px;
+        margin-right: 1em;
+        margin-bottom: 10px;
+        margin-left: 1em;
+        padding: 1em;
+        border: 1px solid blue;    
+        background-color: #023361; 
+    }
+
+</style>
+
+</head>
+<body>
+<div>
+    <a class="a" href="https://github.com/HandMeTheCode/All-Stars" style="color: black;">github.com</a> 
+</div>
+<div>
+
+<script>
+
+function Char_Counts(str1) {
+        var uchars = {};
+        str1.replace(/\S/g, function(l){uchars[l] = (isNaN(uchars[l]) ? 1 : uchars[l] + 1);});
+        return uchars;
+    }
+
+const str1 = prompt('Please write a word of your chosing:');
+const result = Char_Counts(str1);
+alert(`Chosen word is:  ${str1}`);
+alert('Unfortunate, all input has been disable on this website.');
+console.log("Word chosen: ", str1);
+alert('Our agents are still working on it, we apologies for the inconvinience.');
+
+
+</script>
+</div>
+
+<span class="c"> 
+<h2 class="first">Contador de letras</h2>
+<p class="second" style="font-weight:bold">cadena de texto</p>
+<div style="background-color:white;">
+<script class="third"> document.write(str1)</script>
+</div>
+
+<form>
+    <div class="container">
+        <button style="background-color:#FF0000; color: white" type="submit" value="Reset" onclick="console.clear(), alert('This button will clear the console log.'), alert('this will reset the process.')">Limpiar</button>
+        <button style="background-color:#0085FF; color: white" type="button" onclick="console.log(result), alert('This button will calculate the number of times each letter repeates.'), alert('Please proceed and review console log.'), alert('Once on console log, extend or clic Object to review array.')">Calcular</button>
+    </div>
+</form>
+
+<script> alert('Please proceed and utilize the buttons below.')</script>
+
+</span>
+
+</body>
+</html>

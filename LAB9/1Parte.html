@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <style>
+            
+            </style>
+    </head>
+    <body>
+            <table id="myTable" border="1" width="400" height="150">
+              </table>
+              
+              <button type="button" onclick="myFunction()">Try it</button>
+              
+              <script>
+              function myFunction() {
+                var table = document.getElementById("myTable");
+                var row = table.insertRow(0);
+                var cell = row.insertCell(0);
+                cell.innerHTML = prompt("NEW CELL1");
+              }
+              </script>
+        </table>
+    </body>
+</html>

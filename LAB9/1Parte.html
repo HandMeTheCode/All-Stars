@@ -5,19 +5,25 @@
             </style>
     </head>
     <body>
-            <table id="myTable" border="1" width="400" height="150">
-              </table>
-              
-              <button type="button" onclick="myFunction()">Try it</button>
-              
+        <p id="demo0"></p>
+        <p id="demo1"></p>
               <script>
-              function myFunction() {
-                var table = document.getElementById("myTable");
-                var row = table.insertRow(0);
-                var cell = row.insertCell(0);
-                cell.innerHTML = prompt("NEW CELL1");
-              }
+                
+                var piso0= [];
+                piso0.length = Math.min(piso0.length, 1);
+                document.getElementById("demo0").innerHTML = piso0.join(" ");
+                console.log(piso0);
+              
+                var piso1= [];
+                piso1.length = Math.min(piso1.length, 2);
+                document.getElementById("demo1").innerHTML = piso1.join(" ");
+                console.log(piso1);
+
+                var piso2= [];
+                piso2.length = Math.min(piso2.length, 3);
+                document.getElementById("demo2").innerHTML = piso2.join(" ");
+                console.log(piso2);
+
               </script>
-        </table>
     </body>
 </html>

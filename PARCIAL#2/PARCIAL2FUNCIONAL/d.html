@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script src="./d.js" type="text/javascript"></script>
+  <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./d.css"> <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="cp" >
+
+    <div class="cf">
+      
+      <h1 class="title">Calculadora: Ruta de Piramide</h1>
+      
+      <form name="form" action="" method="get" onclick="event.preventDefault()">
+    
+        <div class="input">
+          <h2 class="subtitle">Tamaño</h2>
+          <input class="texto" type="text" name="tata" id="tata">
+        </div>
+        
+        <div class="input">
+          <h2 class="subtitle">Valores</h2>
+          <input class="espace" type="text" name="tv" id="tv">
+        </div>
+    
+        <div class="cb">
+              <button class="boton limpiar" onclick="eliminar()"><span>Reset</span></button>
+              <button class="boton calcular" onclick="construirPiramide()"><span>Submit</span></button>
+        </div>
+    
+      </form>
+    
+    </div>
+    
+    <div class="cr">
+      <h3 class="sub" id="sub"></h3>
+      <p class="track" id="track"></p>
+      <p class="suma" id="suma"></p>
+      <p class="error" id="error"></p>
+    </div>
+    
+    <div id="crp" class="crp">
+
+    </div>
+  </div>
+</body>
+</html>
